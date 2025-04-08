@@ -55,7 +55,7 @@ const columns: ColumnDef<Person, any>[] = [
       const addressFormatted = [address.street, address.city, address.zipcode].filter(Boolean).join(', ');
       return addressFormatted;
     },
-    size: 200,
+    size: 300,
   }
 ];
 
