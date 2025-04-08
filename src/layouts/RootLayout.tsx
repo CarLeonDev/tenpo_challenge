@@ -12,7 +12,7 @@ export const RootLayout = () => {
       <nav className="flex items-center justify-between px-6 dark bg-sidebar text-sidebar-foreground py-4 sticky top-0 z-10">
         <div className="flex items-center gap-4">
           <Link to="/" className="flex flex-col items-center">
-            <img src="/logo.webp" alt="logo" className="h-10" />
+            <img src="logo.webp" alt="logo" className="h-10" />
             <p className="text-white text-xs font-bold">Challenge</p>
           </Link>
         </div>
