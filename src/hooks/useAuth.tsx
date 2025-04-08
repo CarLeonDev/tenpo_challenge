@@ -27,7 +27,6 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     try {
 
       const { status, data } = await AuthService.login(credentials);
-      console.log({ data });
 
       if (status !== 200) {
         throw new Error(data.message);

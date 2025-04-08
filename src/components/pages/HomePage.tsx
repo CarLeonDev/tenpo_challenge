@@ -6,7 +6,7 @@ import { getPersons } from "@/services/personService";
 import { useReactTable, getCoreRowModel, getSortedRowModel, ColumnDef, flexRender, Row } from "@tanstack/react-table";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { useMeasure } from "@/hooks/useMesure";
-import { Loader2 } from "lucide-react";
+import { Loading } from "@/components/ui/loading";
 
 const columns: ColumnDef<Person>[] = [
   {
@@ -117,7 +117,7 @@ export const HomePage = () => {
 
   if (isLoading) {
     return (
-      <Loader2 className="w-10 h-10 animate-spin text-primary" />
+      <Loading size="lg" />
     );
   }
 
@@ -200,7 +200,8 @@ export const HomePage = () => {
             {isFetchingNextPage && (
               <tr className="flex absolute w-full bg-card-50 border-b border-card-200" style={{ transform: `translateY(${rowVirtualizer.getTotalSize()}px)` }}>
                 <td colSpan={columns.length} className="flex items-center p-2 text-sm font-medium border-r last:border-r-0 border-card-200 gap-2">
-                  <Loader2 className="w-4 h-4 animate-spin text-primary" /><span>Loading...</span>
+                  <Loading size="sm" />
+                  <span>Loading...</span>
                 </td>
               </tr>
             )}

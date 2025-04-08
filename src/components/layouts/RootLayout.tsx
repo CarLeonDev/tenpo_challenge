@@ -1,7 +1,8 @@
 import { Link, Outlet } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
-import { Button } from "../ui/button";
-import { Loader2, LogOut } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { LogOut } from "lucide-react";
+import { Loading } from "@/components/ui/loading";
 
 export const RootLayout = () => {
   const { user, isLoading, logout } = useAuth();
@@ -28,8 +29,8 @@ export const RootLayout = () => {
       </nav>
 
       {isLoading && (
-        <div className="flex items-center justify-start h-screen w-screen">
-          <Loader2 className="w-10 h-10 animate-spin" />
+        <div className="flex items-center justify-center h-screen w-screen">
+          <Loading size="lg" />
         </div>
       )}
 
