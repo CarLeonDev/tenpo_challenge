@@ -35,7 +35,7 @@ export const RootLayout = () => {
       )}
 
       {!isLoading && (
-        <div className="flex flex-col items-center justify-center flex-1">
+        <div className="flex flex-col items-center sm:justify-center flex-1">
           <Outlet />
         </div>
       )}
