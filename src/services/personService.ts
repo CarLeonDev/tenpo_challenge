@@ -11,7 +11,7 @@ export const getPersons = async ({page, size}: {page: number, size: number}) => 
         "_seed": page, //seed is used to generate the same data for the same page
       }
     },
-  }).then(({data, total}) => {
+  }).then(({data}) => {
     return {
       data: data.map((person: Person, index: number) => {
         return {

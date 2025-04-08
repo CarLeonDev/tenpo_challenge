@@ -5,8 +5,9 @@ export type Person = {
   email: string
   phone: string
   birthday: Date
-  gender: "female" | "male"
+  gender: "female" | "male" | "other"
   website: string
+  address: Address
 }
 
 export type Address = {

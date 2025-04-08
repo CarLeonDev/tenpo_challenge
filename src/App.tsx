@@ -1,9 +1,9 @@
 
 import { Routes, Route } from "react-router-dom";
-import { HomePage } from "@/components/pages/HomePage";
-import { AuthLayout } from "@/components/layouts/AuthLayout";
-import { RootLayout } from "@/components/layouts/RootLayout";
-import { LoginPage } from "@/components/pages/LoginPage";
+import { HomePage } from "@/pages/HomePage";
+import { AuthLayout } from "@/layouts/AuthLayout";
+import { RootLayout } from "@/layouts/RootLayout";
+import { LoginPage } from "@/pages/LoginPage";
 import { AuthProvider } from "@/hooks/useAuth";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 

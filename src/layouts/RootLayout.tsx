@@ -1,8 +1,8 @@
 import { Link, Outlet } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { LogOut } from "lucide-react";
-import { Loading } from "@/components/ui/loading";
+import { Loading } from "@/components/ui/Loading";
 
 export const RootLayout = () => {
   const { user, isLoading, logout } = useAuth();

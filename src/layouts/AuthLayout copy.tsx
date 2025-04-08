@@ -1,7 +1,7 @@
-import { RootLayout } from "@/components/layouts/RootLayout";
+import { RootLayout } from "@/layouts/RootLayout";
 import { useAuth } from "@/hooks/useAuth";
 import { Navigate } from "react-router-dom";
-import { Loading } from "@/components/ui/loading";
+import { Loading } from "@/components/ui/Loading";
 
 export const AuthLayout = () => {
   const { user, isLoading } = useAuth();
