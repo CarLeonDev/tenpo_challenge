@@ -1,11 +1,4 @@
-
-
-const FAKE_TOKEN = "fdc32567-4567-4567-4567-456745674567";
-export const FAKE_USER = {
-  name: "Test User",
-  email: "test@test.com",
-  password: "test",
-};
+import { FAKE_TOKEN, FAKE_USER } from "@/contants/constants";
 
 export const login = async ({email, password} :{email: string, password: string}) => {
   if (email === FAKE_USER.email && password === FAKE_USER.password) {

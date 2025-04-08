@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { useRef, useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
 import { Navigate } from "react-router-dom";
-import { FAKE_USER } from "@/services/authService";
+import { FAKE_USER } from "@/contants/constants";
 
 export const LoginPage = () => {
   const formRef = useRef<HTMLFormElement>(null);
