@@ -1,4 +1,4 @@
-import { API_URL, PERSON_TOTAL_COUNT } from "@/contants/constants";
+import { API_URL, PERSON_TOTAL_COUNT } from "@/constants/constants";
 import { get } from "@/services/apiService";
 import { Person, PersonApiResponse } from "@/types/person";
 

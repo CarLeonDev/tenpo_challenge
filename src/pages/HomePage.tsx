@@ -1,6 +1,6 @@
 import { keepPreviousData, useInfiniteQuery } from "@tanstack/react-query";
 import { Person, PersonApiResponse } from "@/types/person";
-import { PERSON_FETCH_SIZE } from "@/contants/constants";
+import { PERSON_FETCH_SIZE } from "@/constants/constants";
 import { getPersons } from "@/services/personService";
 import { ColumnDef } from "@tanstack/react-table";
 import { Loading } from "@/components/ui/Loading";

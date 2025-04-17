@@ -1,4 +1,4 @@
-import { API_URL } from "@/contants/constants";
+import { API_URL } from "@/constants/constants";
 import axios, { AxiosRequestConfig } from "axios";
 
 const axiosIntance = axios.create({

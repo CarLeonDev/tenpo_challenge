@@ -1,4 +1,4 @@
-import { FAKE_TOKEN, FAKE_USER } from "@/contants/constants";
+import { FAKE_TOKEN, FAKE_USER } from "@/constants/constants";
 
 export const login = async ({email, password} :{email: string, password: string}) => {
   if (email === FAKE_USER.email && password === FAKE_USER.password) {
